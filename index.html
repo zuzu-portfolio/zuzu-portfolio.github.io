@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="font/fonts.css">
+        <meta charset="utf-8">
+        <title>λ zuzu@xen | Embedded Systems Engineer</title>
+        <meta name="description" content="Embedded systems engineer specializing in aerospace engineering, satellite controls, and flight computers. Expertise in cybersecurity &amp; satellite communications.">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://zuzu.foo/">
+        <meta property="og:title" content="λ zuzu@xen | Embedded Systems Engineer">
+        <meta property="og:description" content="Embedded systems engineer specializing in aerospace engineering, satellite controls, and flight computers. Expertise in cybersecurity &amp; satellite communications.">
+        <meta property="og:image" content="https://zuzu.foo//img/og-image.jpg">
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://zuzu.foo/">
+        <meta property="twitter:title" content="λ zuzu@xen | Embedded Systems Engineer">
+        <meta property="twitter:description" content="Embedded systems engineer specializing in aerospace engineering, satellite controls, and flight computers. Expertise in cybersecurity &amp; satellite communications.">
+        <meta property="twitter:image" content="https://zuzu.foo//img/og-image.jpg">
+        
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://zuzu.foo/">
+        
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        
+        <style>
+            /* Preload canvas with background color to prevent flash */
+            #automataCanvas {
+                background-color: #161616;
+            }
+            
+            /* Font rendering optimizations for pixel-perfect display */
+            body {
+                text-rendering: optimizeLegibility;
+                -webkit-font-smoothing: none;
+                font-smooth: never;
+            }
+            
+            @media screen and (max-width: 480px) {
+                /* Mobile-specific adjustments */
+                html, body {
+                    /* Ensure pixels align to the grid */
+                    text-size-adjust: 100%;
+                    -webkit-text-size-adjust: 100%;
+                }
+            }
+        </style>
+        
+        <!-- Preload automata.js to ensure it's ready before rendering -->
+        <link rel="preload" href="automata.js" as="script">
+        
+        <!-- Structured data for personal website -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "λ zuzu@xen",
+            "url": "https://zuzu.foo/",
+            "image": "https://zuzu.foo//img/headshot.png",
+            "jobTitle": "Embedded Systems Engineer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Purdue University"
+            },
+            "description": "Embedded systems engineer specializing in aerospace engineering, satellite controls, and flight computers. Expertise in cybersecurity &amp; satellite communications."
+        }
+        </script>
+    </head>
+    <body>
+        <!-- Canvas for cellular automata background, sized using CSS only -->
+        <canvas id="automataCanvas" aria-hidden="true"></canvas>
+        
+        <div class="scroll-container">
+            <div id="outer">
+                <main id="content" class="flex-same-size">
+
+                    <div id="work">
+                        <header class="flex-container">
+                            <div class="profile-image">
+                                <img src="img/headshot.png" alt="λ zuzu@xen profile photo">
+                            </div>
+                            <div class="profile-info">
+                                <h1 id="name">
+                                    λ zuzu@xen
+                                </h1>
+                                <div id="subtitle">
+                                    embedded systems, autonomy &amp; control<br>
+                                    purdue university, aeronautical &amp; astronautical engineering 2025<br>
+                                    references and resume available upon request<br>
+                                </div>
+                            </div>
+                        </header>
+                        <section id="about-section">
+                            <h2 id="divider-header" class="subheader">about</h2>
+                            <div id="work-list">
+                                <span id="body"><p>Bridging the gap between operational security and evolving satellite firmware. I am a senior aeronautical &amp; astronautical engineering student at Purdue University. My interests lay in optimizing software architectures for satellites, developing fault-tolerant flight computers, and navigation systems for satellites. I have a personal interest in the hardening of satellite systems as they are an identified, emergent issue in the current global geo-political realm. Talk to me about any of the aforementioned topics.</p>
+</span>
+                            </div>
+                        </section>
+
+                        <section id="projects-section">
+                            <h2 id="divider-header" class="subheader">projects</h2>
+                            <div class="project-list">
+                                <article class="project-item">
+                                    <span class="title">APEX-Sat, Central Flight Computer &amp; Operating System</span> [<a href="https://github.com/apexsat/apexsat" rel="noopener">github</a>]<br>
+                                    <span class="project-desc">The central processing unit behind a CubeSat sponsored by the University Nanosatellite Program (UNP) under the Air Force Research Laboratory (AFRL) meant to run a propulsion experiment in space in collaboration with the Purdue Electric Propulsion and Plasma Laboratory (EPPL) under the guidance of Dr. Alexey Shashurin.</span>
+                                </article>
+                                <article class="project-item">
+                                    <span class="title">Autonomous UAV Navigation</span> [<a href="https://github.com/zuzu-a/421-s25-project" rel="noopener">github</a>]<br>
+                                    <span class="project-desc">Ongoing project implementing attitude determination control systems and SLAM algorithms to create a fully autonomous LTA vehicle capable of navigation based on nodes and pathfinding.</span>
+                                </article>
+                                <article class="project-item">
+                                    <span class="title">Infinifortress v2.0.0</span> [<a href="https://github.com/zuzu-a/Infinifortress" rel="noopener">github</a>]<br>
+                                    <span class="project-desc">A holistic overhaul and migration of a mod based on the game Infiniminer from XNA3.1 and .NET3.5 to MonoGame and .NET8.0. The new framework is based on XNA4.0. In the process, I managed to modernize many sub-systems of the game to be more modern and optimized for the processing power available today. The original game, Infiniminer, was quoted to be the direct inspiration to Minecraft. Feel free to download the binaries and take it for a spin. :-)</span>
+                                </article>
+                                <article class="project-item">
+                                    <span class="title">SecTLK, Satellite Embedded Systems Security Toolkit</span><br>
+                                    <span class="project-desc">Evolving toolkits for embedded system security analysis, focusing on hardening satellite communications and investigating potential vectors of attacks.</span>
+                                </article>
+                                <article class="project-item">
+                                    <span class="title">Portfolio</span><br>
+                                    <span class="project-desc">This website is a full-stack project written in Node.JS, HTML, CSS, and JavaScript. The front-end is maintained publicly on GitHub Pages while the back-end is proprietary code maintained on my local device that automatically generates a static website, builds it, and pushes it to GitHub to update after changes are made client-side. The web framework utilizes Express.js while the templating engine and site generation is overseen by Handlebars. EJS is used for website management.</span>
+                                </article>
+                            </div>
+                        </section>
+
+
+                        <section id="experience-section">
+                            <h2 id="divider-header" class="subheader">experience</h2>
+                            <div class="experience-list">
+                                <article class="experience-item">
+                                    <span class="title">Embedded Software Engineering Lead</span> - Purdue University<br>
+                                    <span class="experience-desc">In my capacity as the software engineering lead in APEx-Sat, I have overseen both the management and implementation of the central flight computer for our propulsion payload. My personal focus was on developing security assessment tools and hardening techniques for this platform, and future CubeSat platforms.</span>
+                                </article>
+                                <article class="experience-item">
+                                    <span class="title">Astrogeology Research Intern</span> - Mohammed bin Rashid Space Centre<br>
+                                    <span class="experience-desc">The research focused on investigating climate phenomena on the Martian surface. I collated data from the EMIRS missions and analyzed it to create a visualization of these cyclical phenomena found near the South Pole of Mars. Later on, I presented potential hypotheses for my thesis and helped the primary science team in conducting their mission by tooling their data analysis suite away from MATLAB towards Python.</span>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section id="skills-section">
+                            <h2 id="divider-header" class="subheader">skills</h2>
+                            <div class="skills-list">
+                                <div class="skill-category">
+                                    <span class="label">Languages</span> C, C++, Python, C#, Node.js, MATLAB, Simulink
+                                </div>
+                                <div class="skill-category">
+                                    <span class="label">Technologies</span> RTOS, Git, Linux, Docker, XFLR5, NASA 42, ST-Link, SWD, JTAG, CMake, Travis CI, Jenkins, SPI, I2C, DMA, GPIO
+                                </div>
+                                <div class="skill-category">
+                                    <span class="label">Hardware</span> ARM MCUs, STM32 MCUs, FPGAs, TI FRAM, Peripheral Drivers, EEPROM, MCU Data Structures
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="contact-section">
+                            <h2 id="divider-header" class="subheader">contact</h2>
+                            <div class="contact-list">
+                                <div class="contact-item">
+                                    <span class="label">links</span> 
+                                    <a href="https://github.com/zuzu-a" rel="noopener">github</a>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <span class="label">contact</span> 
+                                    <a id="email"
+                                    data-email="zuzu@zuzu.foo"
+                                    data-display="zuzu@zuzu.foo"
+                                    onclick="navigator.clipboard.writeText('zuzu@zuzu.foo'); this.classList.remove('copyable'); this.classList.add('copied');"
+                                    onmouseover="this.classList.add('copyable'); this.classList.remove('copied')"
+                                    aria-label="Copy email address"
+                                    ><span class="underline"><u>email</u></span></a>
+                                    <a id="email"
+                                    data-email="zuzu@yax.im"
+                                    data-display="zuzu@yax.im"
+                                    onclick="navigator.clipboard.writeText('zuzu@yax.im'); this.classList.remove('copyable'); this.classList.add('copied');"
+                                    onmouseover="this.classList.add('copyable'); this.classList.remove('copied')"
+                                    aria-label="Copy email address"
+                                    ><span class="underline"><u>xmpp</u></span></a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="key-fingerprints">
+                            <details>
+                                <summary>key fingerprints</summary>
+                                <dl>
+                                  <dt><span class="label">Matrix</span></dt>
+                                  <dd>3AEF02DC 91B84A7E 56C9F1A3 D7E88CC1 F43B67EA<br>7C109AFD 2D8CF341 E291BB58</dd>
+                                  <dt><span class="label">XMPP</span></dt>
+                                  <dd>C1F79BE7 4F2708C4 CB1E344D 16344A89 696F6241</dd>
+                                </dl>
+                            </details>
+                        </div>
+
+                    </div>
+
+                </main>
+            </div>
+        </div>
+        
+        <script type="module">
+            import { AutomataManager } from './automata.js';
+            
+            // Initialize automata immediately without waiting for DOMContentLoaded
+            const canvas = document.getElementById('automataCanvas');
+            new AutomataManager(canvas);
+        </script>
+    </body>
+</html> 
